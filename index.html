@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Folio</title>
+    <link rel="icon" type="image" href="./assets/images/logo.png">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,7 +17,10 @@
                 <img src="./assets/images/light-mode-logo.png" alt="logo navbar" id="imgLight" class="off active">
                 <img src="./assets/images/dark-mode-logo.png" alt="logo navbar" id="imgDark" class="off">
             </a>
-            <button id="navBtn" class="nav__button">wololo</button>
+            <button id="navBtn" class="nav__button notShow">
+                <span class="toggler-icon top"></span>
+                <span class="toggler-icon bot"></span>
+            </button>
             <div id="navList" class="navbar__list off">
                 <ul class="__list">
                     <li class="__list-link">
@@ -34,13 +38,77 @@
                 </ul>
             </div>
         </nav>
-        <div class="hero">
-
-        </div>
+        <section class="hero">
+            <div class="hero__wrap">
+                <h1 class="hero__title">Stand Out from The Crowd.</h1>
+                <p class="hero__para">Agency is a full-service agency, busy designing and building beautiful digital
+                    products, brands, and experiences.</p>
+                <button class="__button">Recent works</button>
+            </div>
+            <div class="hero__scroll">
+                <a href="" class="hero__scroll-link"><img src="./assets/images/scroll.png" alt="" class="hero__scroll-img"><span>Scroll down</span></a>
+            </div>
+        </section>
     </header>
-    <main></main>
+    <main>
+        <section id="sectionWho" class="section__who container__main">
+            <div class="who__head">
+                <div class="who__logo"><img src="./assets/images/logo.png" alt=""></div>
+                <div class="who__headline">
+                    <div class="who__tag"><span>01</span>Who we are</div>
+                    <h2 class="who__title">We Make Designs that Lead and Inpire.</h2>
+                </div>
+            </div>
+            <div class="who__years">
+                <div class="who__list">
+                    <ul>
+                        <li><span>2018</span></li>
+                        <li><span>2019</span></li>
+                        <li><span>2020</span></li>
+                        <li><span>2021</span></li>
+                        <li><span>2022</span></li>
+                    </ul>
+                </div>
+                <div class="who__image">
+                    <div class="who__img-wrap">
+                        <img src="./assets/images/bg_years.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="who__content">
+                <div class="who__content-left">
+                    <div class="who__article">
+                        <h3 class="who__article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <p class="who__article-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta sodales leo vitae vestibulum. Nullam vel posuere nisi. Donec in lobortis arcu.</p>
+                        <button class="__button">Contact Us</button>
+                    </div>
+                </div>
+                <div class="who__content-right">
+                    <div class="who__circle">
+                        <p class="circle__big">28</p>
+                        <p class="circle__small">Lorem Ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sectionLike" class="section__like container__main">
+            <div class="like__head">
+                <div class="like__logo"><img src="./assets/images/logo.png" alt=""></div>
+                <div class="like__headline">
+                    <div class="like__tag"><span>01</span>You may also like</div>
+                    <h2 class="like__title">Recent Works</h2>
+                    <p class="like__para">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
+                </div>
+                <div class="like__content">
+                    <div class="like__content-left"></div>
+                    <div class="like__content-right"></div>
+                </div>
+            </div>
+        </section>
+        <section id="sectionAgency" class="section__agency container__main"></section>
+        <section id="sectionHiring" class="section__hiring container__main"></section>
+    </main>
     <footer>
-        <div>footer</div>
     </footer>
     <script src="main.js"></script>
 </body>
