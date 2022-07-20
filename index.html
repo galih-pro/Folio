@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Folio</title>
     <link rel="icon" type="image" href="./assets/images/logo.png">
-    <link rel="stylesheet" href="reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="header container full">
+    <header class="header container-fluid vh-100 pad__hero">
         <nav class="navbar">
             <a href="#">
                 <img src="./assets/images/light-mode-logo.png" alt="logo navbar" id="imgLight" class="off active">
@@ -46,21 +47,21 @@
                 <button class="__button">Recent works</button>
             </div>
             <div class="hero__scroll">
-                <a href="" class="hero__scroll-link"><img src="./assets/images/scroll.png" alt="" class="hero__scroll-img"><span>Scroll down</span></a>
+                <a href="#sectionWho" class="hero__scroll-link"><img src="./assets/images/scroll.png" alt="" class="hero__scroll-img"><span>Scroll down</span></a>
             </div>
         </section>
     </header>
     <main>
-        <section id="sectionWho" class="section__who container__main">
-            <div class="who__head">
+        <section id="sectionWho" class="section__who container-fluid pad__main">
+            <div class="who__head row g-0">
                 <div class="who__logo"><img src="./assets/images/logo.png" alt=""></div>
                 <div class="who__headline">
                     <div class="who__tag"><span>01</span>Who we are</div>
                     <h2 class="who__title">We Make Designs that Lead and Inpire.</h2>
                 </div>
             </div>
-            <div class="who__years">
-                <div class="who__list">
+            <div class="who__years row g-0">
+                <div class="who__list col-md-2">
                     <ul>
                         <li><span>2018</span></li>
                         <li><span>2019</span></li>
@@ -69,21 +70,19 @@
                         <li><span>2022</span></li>
                     </ul>
                 </div>
-                <div class="who__image">
-                    <div class="who__img-wrap">
-                        <img src="./assets/images/bg_years.png" alt="">
-                    </div>
+                <div class="who__image col-md-10">
+                    <img class="img-fluid" src="./assets/images/bg_years.png" alt="">
                 </div>
             </div>
-            <div class="who__content">
-                <div class="who__content-left">
+            <div class="who__content row g-0">
+                <div class="who__content-left d-flex col-md-7">
                     <div class="who__article">
                         <h3 class="who__article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                         <p class="who__article-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta sodales leo vitae vestibulum. Nullam vel posuere nisi. Donec in lobortis arcu.</p>
                         <button class="__button">Contact Us</button>
                     </div>
                 </div>
-                <div class="who__content-right">
+                <div class="who__content-right col-md-5">
                     <div class="who__circle">
                         <p class="circle__big">28</p>
                         <p class="circle__small">Lorem Ipsum</p>
@@ -91,7 +90,7 @@
                 </div>
             </div>
         </section>
-        <section id="sectionLike" class="section__like container__main">
+        <section id="sectionLike" class="section__like container-fluid pad__main">
             <div class="like__head">
                 <div class="like__logo"><img src="./assets/images/logo.png" alt=""></div>
                 <div class="like__headline">
@@ -99,18 +98,19 @@
                     <h2 class="like__title">Recent Works</h2>
                     <p class="like__para">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
                 </div>
-                <div class="like__content">
-                    <div class="like__content-left"></div>
-                    <div class="like__content-right"></div>
-                </div>
+            </div>
+            <div class="like__content">
+                <div class="like__content-left"></div>
+                <div class="like__content-right"></div>
             </div>
         </section>
-        <section id="sectionAgency" class="section__agency container__main"></section>
-        <section id="sectionHiring" class="section__hiring container__main"></section>
+        <section id="sectionAgency" class="section__agency container-fluid pad__main"></section>
+        <section id="sectionHiring" class="section__hiring container-fluid pad__main"></section>
     </main>
     <footer>
     </footer>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
